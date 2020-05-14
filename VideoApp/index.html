@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>HIiiiiiiiiiiiii</h1>
+    <video width="320" height="240" >
+      </video>
+    <script>
+        navigator.getUserMedia({ video: true, audio: true}, function(stream){
+            var video =  document.querySelector('video');
+            video.srcObject = stream;
+            video.play();
+        }, function(){
+            console.log('ERror');
+        });
+    </script>
+</body>
+
+</html>

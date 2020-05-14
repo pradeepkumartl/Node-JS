@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videochat App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css"></link>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container-fluid text-center justify-content-center">
+        <h2 class="text-center">Interactive Communication Demo</h2>
+        <!-- <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                Client1
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center">
+                Client2
+            </div>
+        </div> -->
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="embed-responsive embed-responsive-16by9 relative">
+                    <video class="embed-responsive-item"></video>
+                    <div id="peerDiv" class="absolute">
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex justify-content-center">
+                
+            </div> -->
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>
